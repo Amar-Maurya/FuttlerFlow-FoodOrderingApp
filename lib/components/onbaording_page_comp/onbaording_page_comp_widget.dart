@@ -130,8 +130,8 @@ class _OnbaordingPageCompWidgetState extends State<OnbaordingPageCompWidget> {
               child: Visibility(
                 visible: widget.isSkipBtnHidden,
                 child: FFButtonWidget(
-                  onPressed: () {
-                    print('Button pressed ...');
+                  onPressed: () async {
+                    await widget.skipBtnAction?.call();
                   },
                   text: 'Skip',
                   options: FFButtonOptions(
