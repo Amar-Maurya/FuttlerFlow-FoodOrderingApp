@@ -10,5 +10,3 @@ export '/pages/registration_page/registration_page_widget.dart'
 export '/pages/login_page/login_page_widget.dart' show LoginPageWidget;
 export '/pages/my_cart/my_cart_widget.dart' show MyCartWidget;
 export '/pages/order_page/order_page_widget.dart' show OrderPageWidget;
-export '/pages/order_detail_page/order_detail_page_widget.dart'
-    show OrderDetailPageWidget;

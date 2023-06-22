@@ -152,11 +152,17 @@ class _MyCartWidgetState extends State<MyCartWidget> {
                             FFButtonWidget(
                               onPressed: () async {
                                 FFAppState().update(() {
-                                  FFAppState().addToMyOrder(
-                                      functions.addMyCartToOrderList(
-                                          FFAppState().myCart.toList(),
-                                          functions.getTotalAmountOfMyCart(
-                                              FFAppState().myCart.toList())));
+                                  FFAppState().addToMyOrder(getJsonField(
+                                    functions.addMyCartToOrderList(
+                                        FFAppState().myCart.toList(),
+                                        functions.getTotalAmountOfMyCart(
+                                            FFAppState().myCart.toList())),
+                                    r'''$''',
+                                  ));
+                                });
+                                FFAppState().update(() {
+                                  FFAppState().deleteMyCart();
+                                  FFAppState().myCart = [];
                                 });
                                 ScaffoldMessenger.of(context).clearSnackBars();
                                 ScaffoldMessenger.of(context).showSnackBar(
@@ -174,10 +180,6 @@ class _MyCartWidgetState extends State<MyCartWidget> {
                                             .onboardingBgColor,
                                   ),
                                 );
-                                FFAppState().update(() {
-                                  FFAppState().deleteMyCart();
-                                  FFAppState().myCart = [];
-                                });
                               },
                               text: 'Place Order',
                               options: FFButtonOptions(

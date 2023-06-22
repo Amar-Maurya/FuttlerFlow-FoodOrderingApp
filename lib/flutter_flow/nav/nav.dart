@@ -138,13 +138,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'orderPage')
               : OrderPageWidget(),
-        ),
-        FFRoute(
-          name: 'OrderDetailPage',
-          path: '/orderDetailPage',
-          builder: (context, params) => OrderDetailPageWidget(
-            orderDetail: params.getParam('orderDetail', ParamType.JSON),
-          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

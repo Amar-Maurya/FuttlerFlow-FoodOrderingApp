@@ -84,11 +84,8 @@ dynamic addMyCartToOrderList(
     'status': "pending"
   };
 
-  // add the new order object to the order list
-  final orderList = <dynamic>[order];
-
   // convert the order list to JSON and return it
-  return orderList;
+  return <dynamic>[order];
 }
 
 List<dynamic> updateProductAppState(List<dynamic> newPorductList) {
