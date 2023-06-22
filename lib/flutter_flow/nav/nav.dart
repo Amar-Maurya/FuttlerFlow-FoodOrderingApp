@@ -317,13 +317,14 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: SpinKitDoubleBounce(
-                      color: FlutterFlowTheme.of(context).error,
-                      size: 50.0,
+              ? Container(
+                  color: FlutterFlowTheme.of(context).tertiary,
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/splash-screen-food-app-food-splash-splash-screen-splash-food-app-splash-screen-text-label-poster-advertisement-transparent-png-361154-removebg-preview.png',
+                      width: MediaQuery.of(context).size.width * 1.0,
+                      height: MediaQuery.of(context).size.height * 1.0,
+                      fit: BoxFit.fitHeight,
                     ),
                   ),
                 )

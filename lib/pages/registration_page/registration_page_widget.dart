@@ -86,8 +86,14 @@ class _RegistrationPageWidgetState extends State<RegistrationPageWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 32.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'FFoods',
-                              style: FlutterFlowTheme.of(context).displaySmall,
+                              'Grabit',
+                              style: FlutterFlowTheme.of(context)
+                                  .displaySmall
+                                  .override(
+                                    fontFamily: 'Outfit',
+                                    color: FlutterFlowTheme.of(context)
+                                        .onboardingBgColor,
+                                  ),
                             ),
                           ),
                         ),

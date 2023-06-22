@@ -83,12 +83,13 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 32.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'FFoods',
+                              'Grabit',
                               style: FlutterFlowTheme.of(context)
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Plus Jakarta Sans',
-                                    color: Color(0xFF101213),
+                                    color: FlutterFlowTheme.of(context)
+                                        .onboardingBgColor,
                                     fontSize: 36.0,
                                     fontWeight: FontWeight.w600,
                                   ),

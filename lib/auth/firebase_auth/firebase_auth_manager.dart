@@ -260,7 +260,7 @@ class FirebaseAuthManager extends AuthManager
       }
       return userCredential == null
           ? null
-          : FFProductsFirebaseUser.fromUserCredential(userCredential);
+          : GrabitFirebaseUser.fromUserCredential(userCredential);
     } on FirebaseAuthException catch (e) {
       ScaffoldMessenger.of(context).hideCurrentSnackBar();
       ScaffoldMessenger.of(context).showSnackBar(
