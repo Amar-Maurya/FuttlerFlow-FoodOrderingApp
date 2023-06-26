@@ -14,3 +14,5 @@ FlutterFlow projects are built to run on the Flutter _stable_ release
     4. When users add one product more than 2 times show it as out of stock.
     5. Implement order details screen where it shows order status.
 This screen should have a username and email which the user entered during login/register flow.
+
+For this feature checkout to flutterflow branch..
