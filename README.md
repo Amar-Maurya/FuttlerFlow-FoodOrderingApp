@@ -1,6 +1,6 @@
 # Grabit
 
-A new Flutter project.
+A new Flutter project food-Ordering app.
 
 ## Getting Started
 
